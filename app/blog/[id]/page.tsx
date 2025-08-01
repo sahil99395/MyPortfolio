@@ -1,12 +1,21 @@
+import { FC } from 'react';
 import BlogPost from './BlogPost';
 
-export async function generateStaticParams() {
-  return [
-    { id: '1' },
-    { id: '2' },
-  ];
+// ✅ Next.js 15 dynamic segment expects this param structure
+interface Props {
+  params: {
+    id: string;
+  };
 }
 
-export default function BlogPostPage({ params }: { params: { id: string } }) {
-  return <BlogPost postId={params.id} />;
+// ✅ Generate static paths (for SSG)
+export async function generateStaticParams() {
+  return [{ id: '1' }, { id: '2' }];
 }
+
+// ✅ Component with correct typing for dynamic routes
+const BlogPostPage = async ({ params }: any) => {
+  return <BlogPost postId={params.id} />;
+};
+
+export default BlogPostPage;
