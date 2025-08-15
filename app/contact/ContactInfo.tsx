@@ -41,7 +41,7 @@ export default function ContactInfo() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-800">Location</h3>
-              <p className="text-gray-600">Patna, India</p>
+              <p className="text-gray-600">Kolkata, India</p>
             </div>
           </div>
           
