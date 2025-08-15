@@ -57,7 +57,7 @@ export default function HeroSection() {
                    className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 cursor-pointer">
                   <i className="ri-linkedin-fill text-2xl text-blue-600"></i>
                 </a>
-                <a href="https://leetcode.com/u/_iam_sahilsingh/" target="_blank" rel="noopener noreferrer" 
+                <a href="https://leetcode.com/u/Sahil_2026/" target="_blank" rel="noopener noreferrer" 
                    className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 cursor-pointer">
                   <i className="ri-code-line text-2xl text-orange-500"></i>
                 </a>
