@@ -29,7 +29,7 @@ export default function ProjectsGrid() {
       demo: "#"
     },
     {
-      title: "Student Result Management System",
+      title: "Data Visualizer(Crypto Dashboard)",
       description: "• Built an interactive cryptocurrency dashboard to visualize real-time market trends and price movements.  • Integrated CoinGecko API for live cryptocurrency data updates,Implemented ApexCharts.js for dynamic,interactive chart visualizations. • Key Technologies:HTML, CSS, and JavaScript for seamless multi-device experience.",
       image: "https://i.ytimg.com/vi/98pOldgPQLQ/maxresdefault.jpg",
       tags: ["Express.js", "Node.js", "JavaScript", "HTML/CSS"],
@@ -37,7 +37,7 @@ export default function ProjectsGrid() {
       demo: "#"
     },
     {
-      title: "Data Visualizer(Crypto Dashboard)",
+      title: "Student Result Management System",
       description: "Created this full-stack portal for educational institutions to manage student results efficiently. Features a secure admin panel with real-time database updates and PDF export functionality. It's been rewarding to build something that actually helps streamline academic processes.",
       image: "https://readdy.ai/api/search-image?query=Student%20result%20management%20system%20dashboard%20with%20academic%20data%20tables%2C%20educational%20administration%20software%20interface%2C%20clean%20database%20management%20design%2C%20professional%20school%20management%20portal%20with%20charts%20and%20student%20information&width=600&height=400&seq=student1&orientation=landscape",
       tags: ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
