@@ -92,7 +92,7 @@ export default function ContactInfo() {
             Want to see my full experience and background? Download my latest resume.
           </p>
           <a 
-            href="https://drive.google.com/uc?export=download&id=1OD1BYXMQDgr_Zs7OPqJy2UxZX32et8t8" 
+            href="https://drive.google.com/uc?export=download&id=1P9LeUIc8g2vC6E0919kzZOCcr8GBPbvX" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition-all cursor-pointer whitespace-nowrap"
