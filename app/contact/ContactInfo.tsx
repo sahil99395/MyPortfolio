@@ -76,7 +76,7 @@ export default function ContactInfo() {
               <i className="ri-linkedin-fill text-xl"></i>
             </a>
             <a 
-              href="https://leetcode.com/u/_iam_sahilsingh/" 
+              href="https://leetcode.com/u/Sahil_2026/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 flex items-center justify-center bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-all cursor-pointer"
