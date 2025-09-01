@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -25,14 +24,37 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isMounted) return;
-    
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "0f8d2ee1-8b1d-4d24-b9ee-ee890328edab",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        console.log("Form submitted:", formData);
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' }); // reset form
+      } else {
+        console.error("Web3Forms error:", result);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+
     setTimeout(() => {
       if (isMounted) {
         setIsSubmitted(false);
@@ -61,7 +83,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-            placeholder="John Doe"
+            placeholder="Sahil Kumar"
           />
         </div>
         
@@ -77,7 +99,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
-            placeholder="john@example.com"
+            placeholder="Sahil@example.com"
           />
         </div>
         
