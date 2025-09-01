@@ -3,7 +3,7 @@
 
 export default function ProjectsGrid() {
   const projects = [
-    {
+     {
       title: "Diabetes Prediction System",
       description: "Built this ML-powered web app when I realized how important early diabetes detection could be. Using a massive dataset of 1M+ records, I developed a prediction system that helps identify diabetes risk with 88% accuracy. The challenging part was reducing false positives by fine-tuning hyperparameters.",
       image: "https://storage.googleapis.com/kaggle-datasets-images/4463541/7655840/2eb9b556420345db5d21b9fa262a3c74/dataset-cover.jpg?t=2024-02-19-12-02-35",
@@ -11,6 +11,22 @@ export default function ProjectsGrid() {
       github: "https://github.com/sahil99395/Diabetes-Prediction",
       demo: "#",
       featured: true
+    },
+   {
+      title: "Ai-Doctor-Voicebot",
+      description: "An AI-powered medical assistant that listens to your voice queries, analyzes uploaded medical images, and responds with text and voice outputs. Built with Gradio, Groq API, and ElevenLabs API, this project demonstrates the integration of speech-to-text, vision-based diagnosis, and text-to-speech synthesis into a single interactive application.",
+      image: "https://floatbot.ai/img/conversational-ai-in-healthcare.png",
+      tags: ["Python (FastAPI / Gradio)","Groq API (LLM + Whisper for Speech Recognition)","ElevenLabs API (Voice synthesis)","Hugging Face Models (optional vision models)"],
+      github: "https://github.com/sahil99395",
+      demo: "https://huggingface.co/spaces/Sahil2026/Ai-Doctor-Voicebot"
+    },
+     {
+      title: "Expense-Chatbot-Tracker",
+      description: "web-based expense tracker with AI-powered chatbot for quick expense logging, category management, and analytics. Built with HTML, TailwindCSS, and Chart.js, with localStorage-based user authentication and data persistence.",
+      image: "https://repository-images.githubusercontent.com/100134141/902d49e2-02d5-4dfc-974c-8a99c4d8f619",
+      tags: ["HTML","CSS","JAVASCRIPT"],
+      github: "https://github.com/sahil99395/Expense-Chatbot-Tracker",
+      demo: "https://sahil99395.github.io/Expense-Chatbot-Tracker/"
     },
     {
       title: "Rock vs Mine Detection",
@@ -42,7 +58,7 @@ export default function ProjectsGrid() {
       image: "https://readdy.ai/api/search-image?query=Student%20result%20management%20system%20dashboard%20with%20academic%20data%20tables%2C%20educational%20administration%20software%20interface%2C%20clean%20database%20management%20design%2C%20professional%20school%20management%20portal%20with%20charts%20and%20student%20information&width=600&height=400&seq=student1&orientation=landscape",
       tags: ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
       github: "https://github.com/sahil99395",
-      demo: "#"
+      demo: "https://sahil99395.github.io/Student-Result-Management-System/"
     }
   ];
 
