@@ -4,21 +4,21 @@
 export default function ProjectsGrid() {
   const projects = [
      {
-      title: "Diabetes Prediction System",
-      description: "Built this ML-powered web app when I realized how important early diabetes detection could be. Using a massive dataset of 1M+ records, I developed a prediction system that helps identify diabetes risk with 88% accuracy. The challenging part was reducing false positives by fine-tuning hyperparameters.",
-      image: "https://storage.googleapis.com/kaggle-datasets-images/4463541/7655840/2eb9b556420345db5d21b9fa262a3c74/dataset-cover.jpg?t=2024-02-19-12-02-35",
-      tags: ["Python", "Flask", "Scikit-learn", "ML"],
-      github: "https://github.com/sahil99395/Diabetes-Prediction",
-      demo: "#",
-      featured: true
-    },
-   {
       title: "Ai-Doctor-Voicebot",
       description: "An AI-powered medical assistant that listens to your voice queries, analyzes uploaded medical images, and responds with text and voice outputs. Built with Gradio, Groq API, and ElevenLabs API, this project demonstrates the integration of speech-to-text, vision-based diagnosis, and text-to-speech synthesis into a single interactive application.",
       image: "https://floatbot.ai/img/conversational-ai-in-healthcare.png",
       tags: ["Python (FastAPI / Gradio)","Groq API (LLM + Whisper for Speech Recognition)","ElevenLabs API (Voice synthesis)","Hugging Face Models (optional vision models)"],
       github: "https://github.com/sahil99395",
       demo: "https://huggingface.co/spaces/Sahil2026/Ai-Doctor-Voicebot"
+      featured:true
+    },
+    {
+      title: "Diabetes Prediction System",
+      description: "Built this ML-powered web app when I realized how important early diabetes detection could be. Using a massive dataset of 1M+ records, I developed a prediction system that helps identify diabetes risk with 88% accuracy. The challenging part was reducing false positives by fine-tuning hyperparameters.",
+      image: "https://storage.googleapis.com/kaggle-datasets-images/4463541/7655840/2eb9b556420345db5d21b9fa262a3c74/dataset-cover.jpg?t=2024-02-19-12-02-35",
+      tags: ["Python", "Flask", "Scikit-learn", "ML"],
+      github: "https://github.com/sahil99395/Diabetes-Prediction",
+      demo: "#",
     },
      {
       title: "Expense-Chatbot-Tracker",
