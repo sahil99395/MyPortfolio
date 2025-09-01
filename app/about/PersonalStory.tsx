@@ -8,7 +8,7 @@ export default function PersonalStory() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://drive.google.com/file/d/1hRSZdD1JvzM7SfLV_P_rmWwvc1JSYkWd/view?usp=sharing"
+              src="https://drive.google.com/uc?export=view&id=1hRSZdD1JvzM7SfLV_P_rmWwvc15YKwd"
               alt="Sahil working"
               className="rounded-lg shadow-2xl w-full object-cover object-top"
             />
