@@ -1,16 +1,23 @@
-
 'use client';
+
+import Image from "next/image";
+import SahilWorking from "./Sahil-Working.jpg";
 
 export default function PersonalStory() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          {/* Local image instead of Google Drive link */}
           <div>
-            <img 
-              src="https://drive.google.com/uc?export=view&id=1hRSZdD1JvzM7SfLV_P_rmWwvc15YKwd"
+            <Image 
+              src={SahilWorking}
               alt="Sahil working"
+              width={600}
+              height={400}
               className="rounded-lg shadow-2xl w-full object-cover object-top"
+              priority
             />
           </div>
           
